@@ -1,0 +1,36 @@
+.back{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+.cards{
+    margin: 20px;
+}
+
+.star{
+    height: 15px;
+    width: 15px;
+    margin-top: -5px;
+}
+.price{
+    color: black;
+    margin-left: 50px;
+    font-size: 15px;
+}
+/* .head{
+    color: black;
+    font-size: 20px;
+} */
+.MuiCardMedia-root.makeStyles-cover-156 {
+    height: 120px;
+}
+p.MuiTypography-root.head.MuiTypography-body1 {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+.map{
+    color: black ;
+}
+.map-gap{
+    margin-top: 58px;
+}

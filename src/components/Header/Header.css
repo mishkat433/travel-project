@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.logo-image img{
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    float: left;
+}
+.backImage{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    height: 100px;
+    width: 100%;
+}
+.inline{
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.inline input{
+    height: 35px;
+    width: 330px;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgba(116, 116, 116, 0.575);
+    border: 1px solid white;
+    outline: none;
+    border-radius: 4px;
+}
+.inline input::placeholder{
+    color: white;
+}
+.item{
+    float: right;
+    margin-top: 20px;
+}
+.item .link{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
