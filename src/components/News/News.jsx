@@ -102,6 +102,7 @@ const News = () => {
            userName:"",
            email:"",
            password:""
+
        })
     }
  

@@ -8,6 +8,7 @@ import { useHistory } from 'react-router-dom';
 const Info = (props) => {
 
     const [location, setLocation] = useContext(userContex)
+    console.log(location)
     const [valid, setValid] = useState(false)
   
     let locationName
