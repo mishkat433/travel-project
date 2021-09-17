@@ -96,7 +96,7 @@ const News = () => {
  
     const bookingHandle=(lav)=>{
        setgohobbor({
-           name: lav,
+           destination: lav,
            details: tutorialSteps[activeStep].details,
            image: tutorialSteps[activeStep].imgPath,
            userName:"",
