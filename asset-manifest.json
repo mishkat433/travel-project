@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/travel-project/static/css/main.08b0d5af.chunk.css",
+    "main.js": "/travel-project/static/js/main.f2f3a4fd.chunk.js",
+    "main.js.map": "/travel-project/static/js/main.f2f3a4fd.chunk.js.map",
+    "runtime-main.js": "/travel-project/static/js/runtime-main.05e8efef.js",
+    "runtime-main.js.map": "/travel-project/static/js/runtime-main.05e8efef.js.map",
+    "static/css/2.818011ed.chunk.css": "/travel-project/static/css/2.818011ed.chunk.css",
+    "static/js/2.618ceaf1.chunk.js": "/travel-project/static/js/2.618ceaf1.chunk.js",
+    "static/js/2.618ceaf1.chunk.js.map": "/travel-project/static/js/2.618ceaf1.chunk.js.map",
+    "index.html": "/travel-project/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/travel-project/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.08b0d5af.chunk.css.map": "/travel-project/static/css/main.08b0d5af.chunk.css.map",
+    "static/js/2.618ceaf1.chunk.js.LICENSE.txt": "/travel-project/static/js/2.618ceaf1.chunk.js.LICENSE.txt",
+    "static/media/Logo1.4b23f184.png": "/travel-project/static/media/Logo1.4b23f184.png",
+    "static/media/Rectangle 26.4b5f425f.png": "/travel-project/static/media/Rectangle 26.4b5f425f.png",
+    "static/media/Rectangle 27.f6fb5e0e.png": "/travel-project/static/media/Rectangle 27.f6fb5e0e.png",
+    "static/media/Rectangle 28.0258445a.png": "/travel-project/static/media/Rectangle 28.0258445a.png",
+    "static/media/Rectangle1.aaab8179.png": "/travel-project/static/media/Rectangle1.aaab8179.png",
+    "static/media/Sreemongol.aea2c690.png": "/travel-project/static/media/Sreemongol.aea2c690.png",
+    "static/media/sundorbon.7b51964c.png": "/travel-project/static/media/sundorbon.7b51964c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05e8efef.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.618ceaf1.chunk.js",
+    "static/css/main.08b0d5af.chunk.css",
+    "static/js/main.f2f3a4fd.chunk.js"
+  ]
+}
