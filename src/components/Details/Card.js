@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Details.css"
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         height: 38,
         width: 38,
     },
-    text:{
+    text: {
         fontSize: 14
     }
 }));
@@ -44,7 +44,7 @@ const Cards = (props) => {
     const { image, headres, bodys, facilities, other, stars, price } = props.detail
     console.log(props.detail)
     const classes = useStyles();
-    const theme = useTheme();
+    // const theme = useTheme();
     return (
         <div className="mb-2 bac">
             <Card className={classes.root}>
@@ -61,18 +61,18 @@ const Cards = (props) => {
                         <Typography className={classes.text} color="textSecondary">
                             {bodys}
                         </Typography>
-                        <Typography className={classes.text}  color="textSecondary">
+                        <Typography className={classes.text} color="textSecondary">
                             {facilities}
                         </Typography>
                         <Typography className={classes.text} color="textSecondary">
                             {other}
                         </Typography>
                         <Typography className={classes.text} color="textSecondary">
-                            <img className="star" src={star} alt="star not found"/> {stars}
+                            <img className="star" src={star} alt="star not found" /> {stars}
                             <span className="price">${price}/night</span>
                         </Typography>
                     </CardContent>
-                   
+
                 </div>
 
             </Card>

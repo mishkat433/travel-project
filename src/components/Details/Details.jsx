@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { userContex } from '../../App';
+import React from 'react';
 import "./Details.css";
 import img1 from "../../Image/Rectangle 26.png";
 import img2 from "../../Image/Rectangle 27.png";
@@ -17,11 +16,9 @@ const center = {
     lng: 91.987030
 };
 
-const Details = (props) => {
+const Details = () => {
 
 
-    const [gohobbor, setgohobbor] = useContext(userContex)
-    
     const allInOne = [
         {
             image: img1,
@@ -55,15 +52,15 @@ const Details = (props) => {
         <div className="container back">
             <div className="row">
                 <div className="col-lg-7">
-                    <h4 className="mt-2 ml-2 text-dark">Stay in : {gohobbor.name}</h4>
+                    <h4 className="mt-2 ml-2 text-dark">Stay in :</h4>
                     <div className="cards">
                         {
-                            allInOne.map(res => <Cards detail={res}></Cards>)
+                            allInOne.map(res => <Cards detail={res} key={res.price}></Cards>)
                         }
                     </div>
                 </div>
                 <div className="col-lg-5">
-                  <div className="map-gap">
+                    <div className="map-gap">
                         <LoadScript
                             googleMapsApiKey="AIzaSyBCQuJXdAqK9cmrI8G8v0KIin3AEjIgu4E"
                         >
@@ -72,16 +69,11 @@ const Details = (props) => {
                                 center={center}
                                 zoom={10}
                             >
-
-                                <></>
                             </GoogleMap>
                         </LoadScript>
-                  </div>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     );
 };

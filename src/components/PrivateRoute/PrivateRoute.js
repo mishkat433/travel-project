@@ -1,26 +1,18 @@
 import React, { useContext } from 'react';
-import { Redirect, Route } from 'react-router';
+import { Navigate, useLocation } from 'react-router-dom';
 import { userContex } from '../../App';
 
-const PrivateRoute = ({ children, ...rest }) => {
+const PrivateRoute = ({ children }) => {
+    const { loginData } = useContext(userContex)
 
-    const [gohobbor, setgohobbor] = useContext(userContex)
+
+    const location = useLocation();
+
+    if (loginData?.email) {
+        return children;
+    }
     return (
-        <Route
-            {...rest}
-            render={({ location }) =>
-                gohobbor.email ? (
-                    children
-                ) : (
-                    <Redirect
-                        to={{
-                            pathname: "/login",
-                            state: { from: location }
-                        }}
-                    />
-                )
-            }
-        />
+        <Navigate to="/login" state={{ form: location }} replace />
     );
 };
 

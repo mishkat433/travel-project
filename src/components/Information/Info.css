@@ -1,4 +1,4 @@
-.full-card{
+.full-card {
     background-color: white;
     height: 280px;
     width: 350px;
@@ -6,28 +6,33 @@
     margin-left: 300px;
     border-radius: 5px;
 }
-.form-label{
+
+.form-label {
     font-size: 14px;
     margin-bottom: 5px;
     color: rgb(61, 61, 61);
-    
+
 }
-.origin-form{
+
+.origin-form {
     background-color: rgb(218, 218, 218);
     border: none;
     outline: none;
 }
-.cal-label{
-    
+
+.cal-label {
+
     color: gray;
 }
-.date-form{
+
+.date-form {
     background-color: rgb(218, 218, 218);
     border: none;
     outline: none;
-    
+
 }
-.chose-btn{
+
+.chose-btn {
     background-color: rgb(250, 169, 48);
     width: 94%;
     margin: 15px auto;
@@ -36,7 +41,9 @@
     border-radius: 4px;
     height: 40px;
     transition: 0.4s;
+    padding: 15px auto;
 }
-.chose-btn:hover{
+
+.chose-btn:hover {
     background-color: rgb(216, 140, 26);
 }

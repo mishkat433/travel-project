@@ -1,55 +1,57 @@
-import React, { createContext, useState } from 'react'
-import Header from './components/Header/Header';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import News from "./components/News/News.jsx";
-import BackImage from "./Image/Rectangle1.png";
+import React, { createContext, useState } from 'react';
+import BackImage from "./Image/mainbg.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Info from './components/Information/Info';
-import Destination from './components/Destination/Destination';
-import Blog from './components/Blog/Blog';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MainLayout from './Layout/MainLayout';
+import News from './components/News/News';
 import Login from './components/Login/Login';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Info from './components/Information/Info';
 import Details from './components/Details/Details';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
+export const userContex = createContext();
 
-export const userContex= createContext()
+function App() {
+  const [contexData, setContexData] = useState({});
+  const [loginData, setLoginData] = useState({});
 
-function App(props) {
-  const [gohobbor, setgohobbor] = useState({})
-   
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/",
+          loader: () => fetch("https://travel-server-rust.vercel.app/place"),
+          element: <News />
+        },
+        {
+          path: "/info",
+          element: <Info />
+        },
+        {
+          path: "/contact",
+          element: <News />
+        },
+        {
+          path: "/details",
+          element: <PrivateRoute><Details /></PrivateRoute>
+        },
+        {
+          path: "/login",
+          element: <Login />
+        },
+      ]
+    }
+  ])
+
+  const data = { contexData, setContexData, loginData, setLoginData };
   return (
-    <div className="backImage" style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 57%)),url(${BackImage})` }}>
-      
-      <userContex.Provider value={[gohobbor, setgohobbor]}>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <News></News>
-          </Route>
-          <Route path="/destination">
-            <Destination></Destination>
-          </Route>
-          <Route path="/info">
-            <Info></Info>
-          </Route>
-            <PrivateRoute path="/blog">
-              <Blog></Blog>
-            </PrivateRoute>
-            <PrivateRoute path="/details">
-              <Details></Details>
-            </PrivateRoute>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-         
-        </Switch>
-      </Router>
+    <div className="backImage" style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 57%)),url(${BackImage})` }}>
+      <userContex.Provider value={data}>
+        <RouterProvider router={router} />
       </userContex.Provider>
     </div>
   )
 }
 export default App;
-
-
-// className = "backImage" style = {{ backgroundImage: `linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 57%)),url(${BackImage})` }}

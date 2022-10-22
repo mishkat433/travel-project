@@ -1,6 +1,7 @@
 p.MuiTypography-root.MuiTypography-body1 {
     font-size: 15px;
 }
+
 .MuiPaper-root.makeStyles-header-6.MuiPaper-elevation0 h1 {
     font-size: 3rem;
 }
@@ -9,14 +10,16 @@ svg.MuiSvgIcon-root {
     background-color: white;
     border-radius: 50%;
 }
-svg.MuiSvgIcon-root path{
+
+svg.MuiSvgIcon-root path {
     color: black;
 }
 
 .MuiPaper-root.MuiMobileStepper-root.MuiMobileStepper-positionStatic.MuiPaper-elevation0 {
     background-color: #eeeeee00;
 }
-.bookingbtn{
+
+.bookingbtn {
     color: black;
     padding: 5px;
     outline: none;
@@ -26,19 +29,23 @@ svg.MuiSvgIcon-root path{
     font-size: 15px;
     transition: 0.3s;
     color: white;
-} 
-.bookingbtn:hover{
+}
+
+.bookingbtn:hover {
     background-color: rgb(196, 109, 10);
-}  
-.bookingbtn a{
+}
+
+.bookingbtn a {
     color: white;
     text-decoration: none;
 }
-.bt{
-    margin-top: 100px;
-    margin-left: 30px;
-  
+
+.details {
+    height: 50%;
 }
+
+.bt {}
+
 /* .MuiTouchRipple-root {
     top: 50px;
     left: 0;
